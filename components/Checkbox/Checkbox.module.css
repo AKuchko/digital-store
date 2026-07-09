@@ -1,19 +1,25 @@
 .checkbox {
     position: relative;
+
     width: 22px;
     height: 22px;
+
     border-radius: 2px;
     border: 1px solid var(--ds-color-dark-gray-3);
+
     background-color: transparent;
+
     cursor: pointer;
 }
 
 .input {
     position: absolute;
     inset: 0;
-    opacity: 0;
-    visibility: none;
     z-index: 1;
+
+    visibility: none;
+    opacity: 0;
+
     cursor: inherit;
 }
 
@@ -22,6 +28,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
     color: var(--ds-color-white);
 }
 

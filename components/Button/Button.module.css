@@ -5,8 +5,11 @@
     gap: 8px;
 
     min-width: 158px;
+
     padding: 8px 36px;
+
     border-radius: 8px;
+
     transition-property: background-color, color;
     transition-duration: 0.2s;
     transition-timing-function: ease;
@@ -49,7 +52,7 @@
 .disbled,
 .button:disabled,
 .button[aria-disabled='true'] {
-    cursor: not-allowed;
     color: var(--ds-color-light-gray-3);
     background-color: var(--ds-color-light-gray-2);
+    cursor: not-allowed;
 }
