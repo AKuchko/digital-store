@@ -9,15 +9,15 @@ import TShirt from '@/assets/icons/tshirt.svg'
 import Check from '@/assets/icons/check.svg'
 
 export const IconByName: Record<string, React.ElementType> = {
-  arrow_right: ArrowRight,
-  buy: Buy,
-  check: Check,
-  headphones: Headphones,
-  pants: Pants,
-  plus: Plus,
-  search: Search,
-  sneakers: Sneakers,
-  tshirt: TShirt
+    arrow_right: ArrowRight,
+    buy: Buy,
+    check: Check,
+    headphones: Headphones,
+    pants: Pants,
+    plus: Plus,
+    search: Search,
+    sneakers: Sneakers,
+    tshirt: TShirt
 }
 
 export type IconName = keyof typeof IconByName
