@@ -8,19 +8,22 @@ type CheckboxProps = {
 }
 
 function Checkbox(props: CheckboxProps) {
-  return (
-    <div className={style.checkbox}>
-        {props.checked && <Icon className={style.icon} name="check" size={22} />}
-        <input
-          className={style.input}
-          type="checkbox"
-          disabled={props.disabled}
-          aria-disabled={props.disabled}
-          checked={props.checked}
-          onChange={(e) => props.onChange(e.target.checked)}
-        />
-    </div>
-  )
+    return (
+        <div className={style.checkbox}>
+            {props.checked && <Icon
+                className={style.icon}
+                name="check"
+                size={22} />}
+            <input
+                className={style.input}
+                type="checkbox"
+                disabled={props.disabled}
+                aria-disabled={props.disabled}
+                checked={props.checked}
+                onChange={(e) => props.onChange(e.target.checked)}
+            />
+        </div>
+    )
 }
 
 export default Checkbox

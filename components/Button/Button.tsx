@@ -11,26 +11,26 @@ type ButtonProps = {
 }
 
 function Button(props: ButtonProps) {
-  return (
-    <button
-      className={clsx(
-        style.button,
-        style[props.theme || 'primary'],
-        props.disabled && style.disabled
-      )}
-      disabled={props.disabled}
-      aria-disabled={props.disabled}
-    >
-      {
-        props.icon &&
+    return (
+        <button
+            className={clsx(
+                style.button,
+                style[props.theme || 'primary'],
+                props.disabled && style.disabled
+            )}
+            disabled={props.disabled}
+            aria-disabled={props.disabled}
+        >
+            {
+                props.icon &&
         <Icon
-          name={props.icon}
-          size={props.iconSize || 12}
+            name={props.icon}
+            size={props.iconSize || 12}
         />
-      }
-      {props.label}
-    </button>
-  )
+            }
+            {props.label}
+        </button>
+    )
 }
 
 export default Button
