@@ -27,6 +27,7 @@
     font: inherit;
 
     color: var(--ds-color-dark-gray-3);
+    cursor: inherit;
 }
 
 /* Checked circle */
@@ -55,6 +56,11 @@
     transform: scale(1);
 }
 
-.disabled {
+.input:disabled {
+    color: inherit;
+}
 
+.disabled {
+    color: var(--ds-color-light-gray);
+    cursor: not-allowed;
 }
