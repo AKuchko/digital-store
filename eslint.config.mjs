@@ -10,6 +10,7 @@ const eslintConfig = defineConfig([
     rules: {
       curly: ['error', 'all'],
       eqeqeq: ['error', 'always'],
+      indent: ['error', 4],
       'no-console': ['warn', { allow: ['warn', 'error'] }],
       'object-shorthand': ['error', 'always'],
       'prefer-const': 'error',
@@ -40,7 +41,17 @@ const eslintConfig = defineConfig([
         'error',
         { props: 'never', children: 'never' }
       ],
-      'react/self-closing-comp': 'error'
+      'react/self-closing-comp': 'error',
+      'react/jsx-max-props-per-line': [
+        'error',
+        {
+          maximum: 1
+        }
+      ],
+      'react/jsx-first-prop-new-line': [
+        'error',
+        'multiline'
+      ]
     }
   },
   // Override default ignores of eslint-config-next.
