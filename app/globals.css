@@ -3,6 +3,24 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --ds-color-white: #fff;
+
+  --ds-color-light-gray: #8F8F8F;
+  --ds-color-light-gray-2: #CCC;
+  --ds-color-light-gray-3: #F5F5F5;
+
+  --ds-color-dark-gray: #1F1F1F;
+  --ds-color-dark-gray-2: #474747;
+  --ds-color-dark-gray-3: #666;
+
+  --ds-color-error: #EE4266;
+  --ds-color-warning: #F6AA1C;
+
+  --ds-color-primary: #C92071;
+  --ds-color-tertiary: #991956;
+
+  --ds-color-secondary: #B5B6F2;
 }
 
 @theme inline {

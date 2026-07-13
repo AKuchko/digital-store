@@ -1,0 +1,58 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    min-width: 158px;
+
+    padding: 8px 36px;
+
+    border-radius: 8px;
+
+    transition-property: background-color, color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+
+.icon {
+
+}
+
+.primary {
+    color: var(--ds-color-light-gray-3);
+    background-color: var(--ds-color-primary);
+}
+
+.primary:hover {
+    background-color: var(--ds-color-tertiary);
+}
+
+.secondary {
+    color: var(--ds-color-primary);
+    background-color: var(--ds-color-light-gray-3);
+}
+
+.secondary:hover {
+    color: #F7F7FC;
+    background-color: var(--ds-color-secondary);
+}
+
+.shop {
+    padding: 12px 36px;
+    color: var(--ds-color-light-gray-3);
+    background-color: #FFB31F;
+}
+
+.shop:hover {
+    background-color: #CF8900;
+}
+
+.disbled,
+.button:disabled,
+.button[aria-disabled='true'] {
+    color: var(--ds-color-light-gray-3);
+    background-color: var(--ds-color-light-gray-2);
+    cursor: not-allowed;
+}
